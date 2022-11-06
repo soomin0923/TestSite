@@ -69,7 +69,7 @@ function setup() {
   colorMode(HSL)
     canvas = createCanvas(1000, 800); // 이거 색 아예 검은색으로 
     var x = (windowWidth - width) / 5*4;
-    var y = (windowHeight - height) / 5*4;
+    var y = (windowHeight - height) / 5*3;
     canvas.position(x,y);
   noStroke();
   background(50);
