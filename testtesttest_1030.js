@@ -21,7 +21,7 @@ class IMG {
   constructor (x, y) {
     this.x = x;
     this.y = y;
-    this.r = random(20,80);
+    this.r = random(40,150);
     this.originalX = x;
     this.originalY= y;
     this.color = Math.floor(Math.random()*360);
@@ -67,9 +67,9 @@ function windowResized() {
 function setup() {
   frameRate(5);
   colorMode(HSL)
-    canvas = createCanvas(800, 800); // 이거 색 아예 검은색으로 
-    var x = (windowWidth - width) / 2;
-    var y = (windowHeight - height) / 2;
+    canvas = createCanvas(1400, 1000); // 이거 색 아예 검은색으로 
+    var x = (windowWidth - width) / 5*4;
+    var y = (windowHeight - height) / 5*4;
     canvas.position(x,y);
   noStroke();
   background(50);
@@ -78,7 +78,7 @@ function setup() {
   textAlign(LEFT, TOP);
   textData = getTextData(message);
   dotCordinate = getCordinates();
-  imgs = createParticles(scaleRate, 0, 0);
+  imgs = createParticles(scaleRate, 500, 500);
   
 
 }
