@@ -21,7 +21,7 @@ class IMG {
   constructor (x, y) {
     this.x = x;
     this.y = y;
-    this.r = random(40,150);
+    this.r = random(20,70);
     this.originalX = x;
     this.originalY= y;
     this.color = Math.floor(Math.random()*360);
