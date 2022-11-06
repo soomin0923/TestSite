@@ -65,7 +65,7 @@ function windowResized() {
 
 
 function setup() {
-  frameRate(5);
+  frameRate(60);
   colorMode(HSL)
     canvas = createCanvas(1000, 800); // 이거 색 아예 검은색으로 
     var x = (windowWidth - width) / 5*4;
