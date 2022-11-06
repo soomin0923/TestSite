@@ -69,7 +69,7 @@ function setup() {
   colorMode(HSL)
     canvas = createCanvas(1000, 800); // 이거 색 아예 검은색으로 
     var x = (windowWidth - width) / 5*4;
-    var y = (windowHeight - height) / 5*3;
+    var y = (windowHeight - height) / 5*4;
     canvas.position(x,y);
   noStroke();
   background(50);
@@ -78,7 +78,7 @@ function setup() {
   textAlign(LEFT, TOP);
   textData = getTextData(message);
   dotCordinate = getCordinates();
-  imgs = createParticles(scaleRate, 500, 400);
+  imgs = createParticles(scaleRate, 500, 350);
   
 
 }
