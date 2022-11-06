@@ -78,7 +78,7 @@ function setup() {
   textAlign(LEFT, TOP);
   textData = getTextData(message);
   dotCordinate = getCordinates();
-  imgs = createParticles(scaleRate, 500, 500);
+  imgs = createParticles(scaleRate, 500, 400);
   
 
 }
