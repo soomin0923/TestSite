@@ -48,7 +48,7 @@ function preload() {
 
 
 function setup() {
-  createCanvas(1400, 1000);
+  createCanvas(1855, 1274);
 
   for (var j=0; j<number; j++) {
   
