@@ -1,4 +1,4 @@
-const fontSize = 60, scaleRate = 9, message = '15000', inpactRange = 150;
+const fontSize = 45, scaleRate = 9, message = '15000', inpactRange = 150;
 let canvas;
 let textData = [];
 let dotsCordinate = [];
@@ -104,7 +104,7 @@ function setup() {
   textAlign(LEFT, TOP);
   textData = getTextData(message);
   dotCordinate = getCordinates();
-  imgs = createParticles(scaleRate, 0, 300);
+  imgs = createParticles(scaleRate, 250, 300);
   
 
 }
