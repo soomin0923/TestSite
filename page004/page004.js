@@ -104,7 +104,7 @@ function setup() {
   textAlign(LEFT, TOP);
   textData = getTextData(message);
   dotCordinate = getCordinates();
-  imgs = createParticles(scaleRate, 200, 300);
+  imgs = createParticles(scaleRate, 100, 300);
   
 
 }
