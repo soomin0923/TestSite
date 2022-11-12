@@ -1,4 +1,4 @@
-const fontSize = 60, scaleRate = 9, message = '6052', inpactRange = 150;
+const fontSize = 60, scaleRate = 9, message = '0.4', inpactRange = 150;
 let canvas;
 let textData = [];
 let dotsCordinate = [];
