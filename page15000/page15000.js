@@ -154,8 +154,8 @@ function getCordinates() {
 
 function createParticles(scaleRate, marginX, marginY) {
   const imgs = [];
-  for (let y = 0; y < dotsCordinate.length; y+=5) {
-    for (let x = 0; x < dotsCordinate[0].length; x+=5) {
+  for (let y = 0; y < dotsCordinate.length; y+=3) {
+    for (let x = 0; x < dotsCordinate[0].length; x+=3) {
       if (dotsCordinate[y][x] === 1) {
         let img = new IMG(x * scaleRate + marginX, y * scaleRate + marginY);
         imgs.push(img)
