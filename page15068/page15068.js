@@ -1,4 +1,4 @@
-const fontSize = 60, scaleRate = 9, message = '15068', inpactRange = 150;
+const fontSize = 45, scaleRate = 9, message = '15068', inpactRange = 150;
 let canvas;
 let textData = [];
 let dotsCordinate = [];
@@ -104,7 +104,7 @@ function setup() {
   textAlign(LEFT, TOP);
   textData = getTextData(message);
   dotCordinate = getCordinates();
-  imgs = createParticles(scaleRate, 0, 300);
+  imgs = createParticles(scaleRate, 250, 300);
   
 
 }
@@ -154,8 +154,8 @@ function getCordinates() {
 
 function createParticles(scaleRate, marginX, marginY) {
   const imgs = [];
-  for (let y = 0; y < dotsCordinate.length; y+=5) {
-    for (let x = 0; x < dotsCordinate[0].length; x+=5) {
+  for (let y = 0; y < dotsCordinate.length; y+=3) {
+    for (let x = 0; x < dotsCordinate[0].length; x+=3) {
       if (dotsCordinate[y][x] === 1) {
         let img = new IMG(x * scaleRate + marginX, y * scaleRate + marginY);
         imgs.push(img)
